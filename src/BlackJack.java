@@ -64,7 +64,6 @@ public class BlackJack {
                     betValue *= 2;
                     deck = player.drawsACard(deck);
                     player.handValuesRange = player.computeHandValuesRange();
-                    break;
                 }
 
             }
@@ -100,10 +99,10 @@ public class BlackJack {
                     System.out.println("You lose!");
                 }
 
-                System.out.println("Keep playing? \n 1 - Yes \n 2 - No");
-                gameStop = scan.nextInt();
-
             }
+
+            System.out.println("Keep playing? \n 1 - Yes \n 2 - No");
+            gameStop = scan.nextInt();
 
         }
 
