@@ -70,5 +70,9 @@ public class Player {
         return closestValue;
     }
 
+    public void handReset(){
+        this.hand = new ArrayList<String>();
+    }
+
 
 }
