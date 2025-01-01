@@ -8,12 +8,13 @@ public class Player {
     //two values are stored to account for one aces range
     //[min value, max value]
     int[] handValuesRange;
+    int money;
 
-
-    public Player(ArrayList<String> hand, int numberOfAces, int[] handValuesRange){
+    public Player(ArrayList<String> hand, int numberOfAces, int[] handValuesRange, int money){
         this.hand = hand;
         this.handValuesRange = handValuesRange;
         this.numberOfAces = numberOfAces;
+        this.money = money;
     }
 
     public Deck drawsACard(Deck deck){
